@@ -155,8 +155,10 @@ categorical_columns = df.select_dtypes(include=['object']).columns
 # Variable dépendante
 prices = df.price.values
 # Variable indépendantes
-matrice_mere = df.loc[:, df.columns != 'price'].values
-
+# Sélectionner toutes les colonnes sauf 'price'
+matrice_mere = df.loc[:, df.columns != 'price']
+#print(matrice_mere.columns)
+#['area', 'bhk', 'bathroom', 'furnishing', 'transaction', 'type', 'city'],
 
 ################################ SEKECTION DE FORMES FONCTIONNELLES
 

@@ -10,57 +10,135 @@
 
   <div class="row container">
     <h2 class="text-center">Estimation</h2>
-      <hr class="dark horizontal my-0 ">
-      <p class="text-dark text-center px-4 py-4">Otenez une estimation précise de la
-        valeur
-        de votre maison, basée sur les caractéristiques spécifiques de votre propriété et les tendances actuelles du
-        marché.
-      </p>
+    <hr class="dark horizontal my-0 ">
+    <p class="text-dark text-center px-4 py-4">Otenez une estimation précise de la
+      valeur
+      de votre maison, basée sur les caractéristiques spécifiques de votre propriété et les tendances actuelles du
+      marché.
+    </p>
     <div class="col-lg-6 col-md-6 order-1 order-md-1 p-0">
       <img class="border-radius-md shadow-lg img-fluid w-100 " src="{% static 'assets/img/b.png' %}" alt="image">
     </div>
     <div class="col-lg-6 col-md-6 order-2 order-md-2">
       <h5 class="text-dark text-center">Remplissez ce formulaire</h5>
       <form class="container">
+
         <div class="row px-3">
           <div class="col-md-6">
-            <div class="input-group input-group-outline my-3">
-              <input type="text" placeholder="Surface" class="form-control is-valid">
+            <div class="input-group input-group-outline mb-4">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option disabled selected> Nombre de chambres </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+
+              </select>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-outline my-3">
-              <input type="text" placeholder="Surface" class="form-control is-valid">
-            </div>
-          </div>
-        </div>
-        <div class="row px-3">
-          <div class="col-md-6">
-            <div class="input-group input-group-outline my-3">
-              <input type="text" placeholder="Surface" class="form-control is-valid">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="input-group input-group-outline my-3">
-              <input type="text" placeholder="Surface" class="form-control is-valid">
+            <div class="input-group input-group-outline mb-4">
+              <select class="form-control" id="exampleFormControlSelect5">
+                <option disabled selected> Type de bien </option>
+                <option> Appartement </option>
+                <option> Maison </option>
+              </select>
             </div>
           </div>
         </div>
         <div class="row px-3">
           <div class="col-md-6">
             <div class="input-group input-group-outline mb-4">
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option> Selectonner un type </option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+              <select class="form-control" id="exampleFormControlSelect4">
+                <option disabled selected> Ameublement </option>
+                <option>Meublé</option>
+                <option>Semi-Meublé</option>
+                <option>Non Meublé</option>
               </select>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-outline my-3">
-              <input type="text" placeholder="Surface" class="form-control is-valid">
+            <div class="input-group input-group-outline mb-4">
+              <select class="form-control" id="exampleFormControlSelect3">
+                <option disabled selected> Etat </option>
+                <option> Neuf </option>
+                <option> Revente </option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row px-3">
+          <div class="col-md-6">
+            <div class="input-group input-group-outline mb-4">
+              <select class="form-control" id="exampleFormControlSelect2">
+                <option disabled selected> Nombre de salles de bains/toilettes </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group input-group-outline mb-4">
+              <select class="form-control" id="exampleFormControlSelect7">
+                <option disabled selected> Ville </option>
+                <option value="Algona">Algona</option>
+                <option value="Auburn">Auburn</option>
+                <option value="Bellevue">Bellevue</option>
+                <option value="Black Diamond">Black Diamond</option>
+                <option value="Bothell">Bothell</option>
+                <option value="Burien">Burien</option>
+                <option value="Carnation">Carnation</option>
+                <option value="Clyde Hill">Clyde Hill</option>
+                <option value="Covington">Covington</option>
+                <option value="Des Moines">Des Moines</option>
+                <option value="Duvall">Duvall</option>
+                <option value="Enumclaw">Enumclaw</option>
+                <option value="Fall City">Fall City</option>
+                <option value="Federal Way">Federal Way</option>
+                <option value="Inglewood-Finn Hill">Inglewood-Finn Hill</option>
+                <option value="Issaquah">Issaquah</option>
+                <option value="Kenmore">Kenmore</option>
+                <option value="Kent">Kent</option>
+                <option value="Kirkland">Kirkland</option>
+                <option value="Lake Forest Park">Lake Forest Park</option>
+                <option value="Maple Valley">Maple Valley</option>
+                <option value="Medina">Medina</option>
+                <option value="Mercer Island">Mercer Island</option>
+                <option value="Newcastle">Newcastle</option>
+                <option value="Normandy Park">Normandy Park</option>
+                <option value="North Bend">North Bend</option>
+                <option value="Pacific">Pacific</option>
+                <option value="Ravensdale">Ravensdale</option>
+                <option value="Redmond">Redmond</option>
+                <option value="Renton">Renton</option>
+                <option value="Sammamish">Sammamish</option>
+                <option value="SeaTac">SeaTac</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Shoreline">Shoreline</option>
+                <option value="Skykomish">Skykomish</option>
+                <option value="Snoqualmie">Snoqualmie</option>
+                <option value="Snoqualmie Pass">Snoqualmie Pass</option>
+                <option value="Tukwila">Tukwila</option>
+                <option value="Vashon">Vashon</option>
+                <option value="Woodinville">Woodinville</option>
+                <option value="Yarrow Point">Yarrow Point</option>
+
+              </select>
             </div>
           </div>
         </div>
@@ -72,7 +150,7 @@
           </div>
           <div class="col-md-6">
             <div class="input-group input-group-outline my-3">
-              <input type="text" placeholder="Surface" class="form-control is-valid">
+              <input type="text" placeholder="Autre" class="form-control is-valid">
             </div>
           </div>
         </div>
@@ -80,9 +158,9 @@
           <button type="button" class="btn bg-gradient-info mb-0 h-100 z-index-2 ">Estimer</button>
         </div>
       </form>
-      
+
     </div>
-    
+
   </div>
   <hr class="dark horizontal my-0 mt-2">
 </div>
