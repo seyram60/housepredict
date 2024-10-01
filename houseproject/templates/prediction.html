@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Prediction Page {% endblock title%}
+{% block content %}
+<div class=" border-0 min-vh-5 relative mt-6 p-3 ">
+
+</div>
+<div class="card bg-white container text-white border-0 min-vh-75 relative p-3 ">
+
+
+  <div class="row container">
+    <h2 class="text-center">Estimation</h2>
+      <hr class="dark horizontal my-0 ">
+      <p class="text-dark text-center px-4 py-4">Otenez une estimation précise de la
+        valeur
+        de votre maison, basée sur les caractéristiques spécifiques de votre propriété et les tendances actuelles du
+        marché.
+      </p>
+    <div class="col-lg-6 col-md-6 order-1 order-md-1 p-0">
+      <img class="border-radius-md shadow-lg img-fluid w-100 " src="{% static 'assets/img/b.png' %}" alt="image">
+    </div>
+    <div class="col-lg-6 col-md-6 order-2 order-md-2">
+      <h5 class="text-dark text-center">Remplissez ce formulaire</h5>
+      <form class="container">
+        <div class="row px-3">
+          <div class="col-md-6">
+            <div class="input-group input-group-outline my-3">
+              <input type="text" placeholder="Surface" class="form-control is-valid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group input-group-outline my-3">
+              <input type="text" placeholder="Surface" class="form-control is-valid">
+            </div>
+          </div>
+        </div>
+        <div class="row px-3">
+          <div class="col-md-6">
+            <div class="input-group input-group-outline my-3">
+              <input type="text" placeholder="Surface" class="form-control is-valid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group input-group-outline my-3">
+              <input type="text" placeholder="Surface" class="form-control is-valid">
+            </div>
+          </div>
+        </div>
+        <div class="row px-3">
+          <div class="col-md-6">
+            <div class="input-group input-group-outline mb-4">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option> Selectonner un type </option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group input-group-outline my-3">
+              <input type="text" placeholder="Surface" class="form-control is-valid">
+            </div>
+          </div>
+        </div>
+        <div class="row px-3">
+          <div class="col-md-6">
+            <div class="input-group input-group-outline my-3">
+              <input type="text" placeholder="Surface" class="form-control is-valid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group input-group-outline my-3">
+              <input type="text" placeholder="Surface" class="form-control is-valid">
+            </div>
+          </div>
+        </div>
+        <div class="py-4 container align-items-center text-center">
+          <button type="button" class="btn bg-gradient-info mb-0 h-100 z-index-2 ">Estimer</button>
+        </div>
+      </form>
+      
+    </div>
+    
+  </div>
+  <hr class="dark horizontal my-0 mt-2">
+</div>
+
+
+{% endblock content %}
